@@ -1,0 +1,17 @@
+._name > div{
+	display: inline-grid;
+	
+}
+
+._name{
+	padding: 15px 15px;
+	border-bottom: 1px solid #f1f1f1;
+}
+
+._name .votes *{
+	display: inline-block;
+}
+
+.votes i{
+	cursor: pointer;
+}
