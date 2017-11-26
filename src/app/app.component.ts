@@ -39,7 +39,8 @@ export class AppComponent implements OnInit{
   	if(isValid){
   		this.rest_comment_service.postComment(this.comment)
   			.then(res=>{
-  				this.comment_list += res;
+          console.log(res);
+  				this.comment_list.unshift(res);
   			})
   			.catch(err=> {throw err});
   	}

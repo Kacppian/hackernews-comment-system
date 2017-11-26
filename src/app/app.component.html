@@ -46,11 +46,12 @@
 		<div *ngFor="let comment of comment_list;let i=index;">
 			<div class="_name">
 				<div>
-					<h4>{{ i }}.</h4>
+					<h4>{{ i + 1}}.</h4>
 				</div>
 				<div>
 					<h4>{{ comment.name }}</h4>
 					<p>{{ comment.text }}</p>
+          <p>{{ comment.timestamp | date }}</p>
 				</div>
 				<div class="pull-right">
 					<div class="votes">
